@@ -10,7 +10,7 @@ const TypingText = () => {
   const handleStartTyping = () => {
     setIsTyping(true);
     setTextTyped("");
-    let i = 0;
+    let i = -1;
     let typingInterval = setInterval(() => {
       if (i < text.length) {
         setTextTyped((prevText) => prevText + text.charAt(i));
@@ -48,7 +48,7 @@ const TypingText = () => {
           {isTyping ? "...در حال نوشتن" : "شروع به نوشتن کن"}
           {isFinishedTyping ? "hidden" : ""}
         </button>
-        <p className={` ${isTyping ? "" : "hidden"}`}>{textTyped}</p>
+        <p className={`p-4 ${isTyping ? "" : "hidden"}`}>{textTyped}</p>
       </div>
       <div className={`mt-10  ${isFinishedTyping ? "" : "hidden"}`}>
         <button

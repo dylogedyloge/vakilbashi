@@ -28,9 +28,9 @@ const FormStepper = () => {
   };
   // CASE 3
   const [headings, setHeadings] = useState([
-    { text: "گیاهخواری چیست؟", hasImage: false },
-    { text: "گیاهخواری و علم نوین", hasImage: false },
-    { text: "چهره‌های مشهور گیاهخوار", hasImage: false },
+    { text: "مناسب‌ترین مبلمان برای آپارتمان", hasImage: false },
+    { text: "ارتباط ابعاد ساختمان و نوع مبل", hasImage: false },
+    { text: "کاربرد یا زیبایی؟ اولویت در انتخاب مبلمان", hasImage: false },
   ]);
   const [editingIndex, setEditingIndex] = useState(null);
   const handleDeleteHeading = (index) => {
@@ -159,7 +159,9 @@ const FormStepper = () => {
                       <div className="kbd kbd-sm p-2 m-1 relative " key={index}>
                         <button
                           className="btn btn-ghost btn-circle btn-xs absolute right-1 top-1"
-                          onClick={(event) => handleKeyWordDelete(word, event)}
+                          onConKeyDown={(event) =>
+                            handleKeyWordDelete(word, event)
+                          }
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -214,9 +216,7 @@ const FormStepper = () => {
             <form className="grid grid-cols-2 gap-6 ">
               <div className="form-control">
                 <label className="label cursor-pointer">
-                  <span className="label-text">
-                    درمان بیماری‌های لاعلاج با گیاهخواری
-                  </span>
+                  <span className="label-text">مبلمان اداری و رسمی</span>
                   <input
                     type="radio"
                     name="radio-10"
@@ -226,7 +226,7 @@ const FormStepper = () => {
               </div>
               <div className="form-control">
                 <label className="label cursor-pointer">
-                  <span className="label-text">تاریخچه گیاهخواری در ایران</span>
+                  <span className="label-text">انواع مبل راحتی برای خانه</span>
                   <input
                     type="radio"
                     name="radio-10"
