@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: bnazanin;
+  src: local("bnazanin"), url(./fonts/bnazanin.ttf) format("truetype");
+}
+@font-face {
+  font-family: Iranian-Sans;
+  src: local("Iranian-Sans"), url(./fonts/Iranian-Sans.ttf) format("truetype");
+}
+@font-face {
+  font-family: Shabnam;
+  src: local("Shabnam"), url(./fonts/Shabnam.ttf) format("truetype");
+}
+@font-face {
+  font-family: Sahel;
+  src: local("Sahel"), url(./fonts/Sahel.ttf) format("truetype");
+}
+@font-face {
+  font-family: Vazirmatn;
+  src: local("Vazirmatn"), url(./fonts/Vazirmatn.ttf) format("truetype");
+}
+@font-face {
+  font-family: Gandom;
+  src: local("Gandom"), url(./fonts/Gandom.ttf) format("truetype");
+}
+@font-face {
+  font-family: IranSans;
+  src: local("IranSans"), url(./fonts/IranSans.ttf) format("truetype");
+}
+* {
+  font-family: "Montserrat", Sahel;
+}
