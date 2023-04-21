@@ -72,7 +72,7 @@ function ProfileSettings() {
 
         <div className="mt-16">
           <button
-            className="btn btn-primary btn-block"
+            className="btn btn-secondary btn-block"
             onClick={() => updateProfile()}
           >
             بروز رسانی

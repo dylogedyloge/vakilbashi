@@ -220,7 +220,7 @@ const FormStepper = () => {
                   <input
                     type="radio"
                     name="radio-10"
-                    className="radio radio-error"
+                    className="radio radio-secondary"
                   />
                 </label>
               </div>
@@ -230,7 +230,7 @@ const FormStepper = () => {
                   <input
                     type="radio"
                     name="radio-10"
-                    className="radio radio-error"
+                    className="radio radio-secondary"
                     checked
                   />
                 </label>
@@ -270,14 +270,14 @@ const FormStepper = () => {
               ))}
               {faqIsEditMode ? (
                 <button
-                  className="btn btn-primary px-4 py-2 mt-4 "
+                  className="btn btn-secondary px-4 py-2 mt-4 "
                   onClick={handleFaqSaveClick}
                 >
                   ذخیره
                 </button>
               ) : (
                 <button
-                  className="btn btn-secondary px-4 py-2 mt-4 "
+                  className="btn btn-info px-4 py-2 mt-4 "
                   onClick={handleFaqEditClick}
                 >
                   تغییر
@@ -322,14 +322,16 @@ const FormStepper = () => {
                         <AiOutlineFileImage
                           onClick={() => handleHasImageToggle(index)}
                           className={`cursor-pointer ${
-                            heading.hasImage ? "text-error" : "text-base-200"
+                            heading.hasImage
+                              ? "text-secondary"
+                              : "text-base-200"
                           }`}
                         />
                         <Checkbox
                           onClick={() => handleHasImageToggle(index)}
                           type="checkbox"
                           checked={`${heading.hasImage ? "checked" : ""}`}
-                          color="red"
+                          color="#6E0B75"
                         />
 
                         <span>{heading.text}</span>
@@ -381,7 +383,7 @@ const FormStepper = () => {
         <ul className="steps">
           <li
             className={`step cursor-pointer text-sm ${
-              step >= 1 ? "step-info" : ""
+              step >= 1 ? "step-secondary" : ""
             }`}
             onClick={() => handleStepChange(1)}
           >
@@ -389,7 +391,7 @@ const FormStepper = () => {
           </li>
           <li
             className={`step cursor-pointer text-sm ${
-              step >= 2 ? "step-info" : ""
+              step >= 2 ? "step-secondary" : ""
             }`}
             onClick={() => handleStepChange(2)}
           >
@@ -397,7 +399,7 @@ const FormStepper = () => {
           </li>
           <li
             className={`step cursor-pointer text-sm ${
-              step >= 3 ? "step-info" : ""
+              step >= 3 ? "step-secondary" : ""
             }`}
             onClick={() => handleStepChange(3)}
           >
@@ -405,7 +407,7 @@ const FormStepper = () => {
           </li>
           <li
             className={`step cursor-pointer text-sm ${
-              step >= 4 ? "step-info" : ""
+              step >= 4 ? "step-secondary" : ""
             }`}
             onClick={() => handleStepChange(4)}
           >
@@ -413,7 +415,7 @@ const FormStepper = () => {
           </li>
           <li
             className={`step cursor-pointer text-sm ${
-              step >= 5 ? "step-info" : ""
+              step >= 5 ? "step-secondary" : ""
             }`}
             onClick={() => handleStepChange(5)}
           >

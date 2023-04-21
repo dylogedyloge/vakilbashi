@@ -41,7 +41,7 @@ const TypingText = () => {
       </div>
       <div className="card">
         <button
-          className={`btn btn-primary ${isFinishedTyping ? "hidden" : ""}`}
+          className={`btn btn-secondary ${isFinishedTyping ? "hidden" : ""}`}
           onClick={handleStartTyping}
           disabled={isTyping}
         >
@@ -52,7 +52,7 @@ const TypingText = () => {
       </div>
       <div className={`mt-10  ${isFinishedTyping ? "" : "hidden"}`}>
         <button
-          className="btn btn-block btn-primary lowercase"
+          className="btn btn-block btn-secondary lowercase"
           onClick={handleDownloadDocx}
         >
           <BsDownload className="ml-4 text-xl" />

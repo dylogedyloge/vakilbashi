@@ -43,7 +43,7 @@ const LoginForm = () => {
 
           <div className="flex justify-center items-center h-screen">
             <div>
-              <h1 className="text-2xl font-bold mb-5">
+              <h1 className="text-2xl font-bold mb-5 text-center">
                 یکی از روش‌های زیر را برای ورود انتخاب کنید
               </h1>
               <div className="flex justify-center mb-5">

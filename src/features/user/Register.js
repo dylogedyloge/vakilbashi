@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -207,7 +206,7 @@ const Register = () => {
                         checked={`${
                           formik.values.agreeToTermsOfService ? "checked" : ""
                         }`}
-                        color="red"
+                        color="#6E0B75"
                       />
                       <span className="tracking-wide text-gray-700 text-xs font-bold">
                         با&nbsp;
@@ -243,7 +242,7 @@ const Register = () => {
                             ? "checked"
                             : ""
                         }`}
-                        color="red"
+                        color="#6E0B75"
                       />
 
                       <span className="tracking-wide text-gray-700 text-xs font-bold">
@@ -264,7 +263,7 @@ const Register = () => {
                             ? "checked"
                             : ""
                         }`}
-                        color="red"
+                        color="#6E0B75"
                       />
 
                       <span className="tracking-wide text-gray-700 text-xs font-bold">

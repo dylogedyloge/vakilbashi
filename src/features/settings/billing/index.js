@@ -110,7 +110,7 @@ function Billing() {
     if (status === "پرداخت شده")
       return <div className="badge badge-success">{status}</div>;
     if (status === "در انتظار پرداخت")
-      return <div className="badge badge-primary">{status}</div>;
+      return <div className="badge badge-secondary">{status}</div>;
     else return <div className="badge badge-ghost">{status}</div>;
   };
 

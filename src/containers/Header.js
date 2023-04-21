@@ -48,11 +48,11 @@ function Header() {
         <div className="">
           <label
             htmlFor="left-sidebar-drawer"
-            className="btn btn-primary drawer-button lg:hidden"
+            className="btn btn-secondary drawer-button lg:hidden"
           >
-            <Bars3Icon className="h-5 inline-block w-5" />
+            <Bars3Icon className="h-5 inline-block w-5 " />
           </label>
-          <h1 className="text-2xl font-semibold ml-2">{pageTitle}</h1>
+          <h1 className="text-2xl font-semibold mr-2">{pageTitle}</h1>
         </div>
 
         <div className="order-last">
@@ -78,7 +78,7 @@ function Header() {
 
           {/* Notification icon */}
           <button
-            className="btn btn-ghost ml-4  btn-circle"
+            className="btn btn-ghost  btn-circle"
             onClick={() => openNotification()}
           >
             <div className="indicator">
@@ -92,7 +92,7 @@ function Header() {
           </button>
 
           {/* Profile icon, opening menu on click */}
-          <div className="dropdown dropdown-right ml-4">
+          <div className="dropdown dropdown-right">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
                 <img src="/1.jpg" alt="profile" />

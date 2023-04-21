@@ -18,7 +18,7 @@ const TopSideButtons = () => {
   return (
     <div className="inline-block float-right">
       <button
-        className="btn px-6 btn-sm normal-case btn-primary mx-4"
+        className="btn px-6 btn-sm normal-case btn-secondary mx-4"
         onClick={() => addNewTeamMember()}
       >
         دعوت عضو جدید
@@ -98,11 +98,11 @@ function Team() {
 
   const getRoleComponent = (role) => {
     if (role === "ادمین")
-      return <div className="badge badge-secondary">{role}</div>;
+      return <div className="badge badge-primary">{role}</div>;
     if (role === "کارشناس تولید محتوا")
       return <div className="badge">{role}</div>;
     if (role === "مدیرپروژه")
-      return <div className="badge badge-primary">{role}</div>;
+      return <div className="badge badge-secondary">{role}</div>;
     if (role === "کارآموز")
       return <div className="badge badge-accent">{role}</div>;
     else return <div className="badge badge-ghost">{role}</div>;
