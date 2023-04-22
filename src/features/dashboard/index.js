@@ -108,7 +108,7 @@ const FormStepper = () => {
   };
 
   const handleInputKeyDown = (event) => {
-    if (event.key === "/" && currentWord) {
+    if (event.key === "Enter" && currentWord) {
       event.preventDefault();
       setWords([...words, currentWord]);
       setCurrentWord("");
@@ -143,21 +143,16 @@ const FormStepper = () => {
                   <p className="whitespace-normal break-words">{title}</p>
                 </div>
               </div>
-              <div className="form-control w-full max-w-xs">
-                <label className="label">
-                  <span className="label-text text-info">
-                    بعد از هر کلیدواژه علامت اسلش ( / ) بگذارید
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  value={currentWord}
-                  onChange={handleKeywordInputChange}
-                  onKeyDown={handleInputKeyDown}
-                  placeholder="کلیدواژه‌ها"
-                  className="input input-bordered w-full"
-                />
-              </div>
+
+              <input
+                type="text"
+                value={currentWord}
+                onChange={handleKeywordInputChange}
+                onKeyDown={handleInputKeyDown}
+                placeholder="کلیدواژه‌ها"
+                className="input input-bordered w-full"
+              />
+
               <div className="card w-5/6 bg-base-300 ">
                 <div className="card-body">
                   <h2 className="card-title">کلیدواژه‌ها</h2>
