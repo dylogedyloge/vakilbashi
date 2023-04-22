@@ -108,7 +108,7 @@ const FormStepper = () => {
   };
 
   const handleInputKeyDown = (event) => {
-    if (event.key === "Enter" && currentWord) {
+    if (event.key === "/" && currentWord) {
       event.preventDefault();
       setWords([...words, currentWord]);
       setCurrentWord("");
@@ -139,19 +139,26 @@ const FormStepper = () => {
               />
               <div className="card bg-base-300 ">
                 <div className="card-body">
-                  <h2 className="card-title">عنوان مقاله</h2>
-                  <p>{title}</p>
+                  <h2 className="card-title o">عنوان مقاله</h2>
+                  <p className="whitespace-normal break-words">{title}</p>
                 </div>
               </div>
-              <input
-                type="text"
-                value={currentWord}
-                onChange={handleKeywordInputChange}
-                onKeyDown={handleInputKeyDown}
-                placeholder="کلیدواژه‌ها"
-                className="input input-bordered w-full  mt-10"
-              />
-              <div className="card bg-base-300 ">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-info">
+                    بعد از هر کلیدواژه علامت اسلش ( / ) بگذارید
+                  </span>
+                </label>
+                <input
+                  type="text"
+                  value={currentWord}
+                  onChange={handleKeywordInputChange}
+                  onKeyDown={handleInputKeyDown}
+                  placeholder="کلیدواژه‌ها"
+                  className="input input-bordered w-full"
+                />
+              </div>
+              <div className="card w-5/6 bg-base-300 ">
                 <div className="card-body">
                   <h2 className="card-title">کلیدواژه‌ها</h2>
                   <div className="grid grid-flow-row auto-rows-max ">
@@ -194,9 +201,9 @@ const FormStepper = () => {
                 <option value="رسمی">رسمی</option>
                 <option value="غیررسمی">غیر رسمی</option>
               </select>
-              <div className="card bg-base-300 ">
-                <div className="card-body">
-                  <h2 className="card-title">لحن</h2>
+              <div className="card w-5/6 bg-base-300 ">
+                <div className="card-body ">
+                  <h2 className="card-title ">لحن</h2>
                   <p>{tone}</p>
                 </div>
               </div>
